@@ -1,0 +1,38 @@
+:root {
+  --bs-light-rgb: "background-color: #fffff";
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbillede {
+  width: 100px;
+}
+.bg-light {
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.carousel-item img {
+  max-height: 200px;
+  object-fit: cover;
+  object-position: 50%;
+}
+/* Når skærmen  */
+
+@media (min-width: 576px) {
+  .carousel-item img {
+    max-height: 400px;
+  }
+}

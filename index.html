@@ -14,56 +14,225 @@
     />
 
     <!-- får den til at snakke med css -->
+    <link rel="stylesheet" href="rwd.css" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <title></title>
   </head>
   <body>
-    <div>class=</div>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- navbar start -->
+    <!-- <div class="container"> -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
+          <img class="navbillede img-fluid" src="foto/logo-flower.png" alt="" />
+          <a class="navbar-brand" href="#"></a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Navbar</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </nav>
     </header>
+    <!-- </div> -->
+    <!-- Navbar slut -->
+    <main class="d-grid gap-5">
+      <!-- splash karusel -->
 
-    <h1>Hello, world!</h1>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="foto/logo-flower.png"
+              class="d-block w-100"
+              alt="splash"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="foto/buket.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="foto/blomster_vase.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- splash karusel slut -->
+
+      <!-- Første section -->
+      <div class="container">
+        <div class="row">
+          <h1 class="display-4 mt-5">Hvem er vi</h1>
+
+          <p class="lead px-md-3 mx-md-5 my-md-4">
+            FlowerMatt er det duskal ha hvis du vil ha den smukkeste Altan i
+            byen og vigtigs af alt hjælpe til med at få biodiversiteten ind i
+            byerne.
+          </p>
+          <hr class="my-md-5 mx-md-6 my-md-6" />
+        </div>
+      </div>
+
+      <!-- Første section slut -->
+
+      <!-- Anden section -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6 m-auto">
+            <p>
+              Tekst omkring hvorfor vores produkter er de bedste og det er dem
+              du skal købe
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="foto/blomster_vase.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img src="foto/blomster_vase.jpg" alt="" />
+          </div>
+          <div class="col-6 m-auto">
+            <p>
+              Tekst omkring hvorfor vores produkter er de bedste og det er dem
+              du skal købe
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 m-auto">
+            <p>
+              Tekst omkring hvorfor vores produkter er de bedste og det er dem
+              du skal købe
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="foto/blomster_vase.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Anden section slut -->
+
+      <!-- Trejde section  -->
+
+      <div>
+        <video autoplay muted loop id="myVideo">
+          <source src="video/blomsterrang.MP4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Trejde section slut -->
+
+      <!-- Fjerde section -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-6 m-auto">
+            <p>
+              Tekst omkring hvorfor vores produkter er de bedste og det er dem
+              du skal købe
+            </p>
+          </div>
+          <div class="col-6">
+            <img src="foto/blomster_vase.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Fjerde section slut -->
+    </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
