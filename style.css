@@ -1,12 +1,13 @@
-.h1 {
+h1 {
   font-family: "Lora", serif;
 }
 
-.h2 {
+h2 {
   font-family: "Open Sans Condensed", sans-serif;
+  font-size: 3rem;
 }
 
-.p {
+p {
   font-family: "Abel", sans-serif;
 }
 
@@ -20,7 +21,10 @@
 }
 
 .navbillede {
-  width: 100px;
+  width: 200px;
+}
+.blomster-logo {
+  width: 90px;
 }
 .bg-light {
   background-color: white !important;
@@ -29,8 +33,14 @@
 .display-4 {
   font-weight: 400;
 }
-img {
+main .container .col-6 img {
   max-width: 100%;
+  box-shadow: 3px 3px 10px #5f5f5f6b;
+  border: 12px solid white;
+}
+
+.row.info {
+  margin-bottom: 5rem;
 }
 
 video {
@@ -40,9 +50,12 @@ video {
   aspect-ratio: 16/9;
   opacity: 60%;
 }
-
+.carousel {
+  min-height: 500px;
+}
 .carousel-item img {
-  max-height: 200px;
+  min-height: 500px;
+  max-height: 600px;
   object-fit: cover;
   object-position: 50%;
 }
@@ -50,6 +63,10 @@ video {
 .some-container img {
   max-width: 50%;
   border: solid 0.5px rgb(207, 207, 207);
+}
+
+iframe {
+  min-height: 350px;
 }
 
 .mb-4 {
@@ -64,10 +81,13 @@ video {
   }
 
   .min-container img {
-    max-width: 70%;
+    max-width: 100%;
   }
 
   .some-container img {
     max-width: 75%;
+  }
+  iframe {
+    max-width: 50%;
   }
 }
