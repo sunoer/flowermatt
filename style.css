@@ -1,5 +1,18 @@
+.h1 {
+  font-family: "Lora", serif;
+}
+
+.h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.p {
+  font-family: "Abel", sans-serif;
+}
+
 :root {
   --bs-light-rgb: "background-color: #fffff";
+  /* --bs-font-style: "bs-body-font-family"; */
 }
 
 .navbar-toggler:focus {
@@ -10,9 +23,12 @@
   width: 100px;
 }
 .bg-light {
-  background-color: white;
+  background-color: white !important;
 }
 
+.display-4 {
+  font-weight: 400;
+}
 img {
   max-width: 100%;
 }
@@ -22,6 +38,7 @@ video {
   height: auto;
   object-fit: cover;
   aspect-ratio: 16/9;
+  opacity: 60%;
 }
 
 .carousel-item img {
@@ -29,10 +46,28 @@ video {
   object-fit: cover;
   object-position: 50%;
 }
+
+.some-container img {
+  max-width: 50%;
+  border: solid 0.5px rgb(207, 207, 207);
+}
+
+.mb-4 {
+  max-width: 75px;
+}
+
 /* Når skærmen  */
 
 @media (min-width: 576px) {
   .carousel-item img {
     max-height: 400px;
+  }
+
+  .min-container img {
+    max-width: 70%;
+  }
+
+  .some-container img {
+    max-width: 75%;
   }
 }
