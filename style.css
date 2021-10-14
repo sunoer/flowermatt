@@ -7,6 +7,11 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
 p {
   font-family: "Abel", sans-serif;
 }
@@ -33,6 +38,11 @@ p {
 .display-4 {
   font-weight: 400;
 }
+
+.opdeler img {
+  width: 100vw;
+}
+
 main .container .col-6 img {
   max-width: 100%;
   box-shadow: 3px 3px 10px #5f5f5f6b;
@@ -72,6 +82,14 @@ iframe {
 .mb-4 {
   max-width: 75px;
 }
+
+footer {
+  background-color: #ffd615;
+}
+
+/* footer img {
+  max-width: 100%;
+} */
 
 /* Når skærmen  */
 
