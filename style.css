@@ -14,6 +14,21 @@ h3 {
 
 p {
   font-family: "Abel", sans-serif;
+  font-size: 1.15rem;
+}
+img {
+  width: 100%;
+}
+
+.bg {
+  background-color: rgb(247, 247, 247);
+}
+.bg-grey {
+  background-color: rgb(241, 230, 200);
+}
+
+.bg-green {
+  background-color: rgb(231, 243, 215);
 }
 
 :root {
@@ -41,12 +56,23 @@ p {
 
 .opdeler img {
   width: 100vw;
+  display: none;
 }
 
-main .container .col-6 img {
+main .container .info .col-6 img {
   max-width: 100%;
   box-shadow: 3px 3px 10px #5f5f5f6b;
   border: 12px solid white;
+}
+
+.produkt {
+  box-shadow: 1px 3px 5px #3030303d;
+  text-align: center;
+}
+
+.produkt:hover {
+  transform: scale(1.02);
+  transition-duration: 0.2s;
 }
 
 .row.info {
@@ -84,7 +110,7 @@ iframe {
 }
 
 footer {
-  background-color: #ffd615;
+  background-color: rgb(241, 230, 200);
 }
 
 /* footer img {
