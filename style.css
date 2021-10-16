@@ -24,7 +24,7 @@ img {
   background-color: rgb(247, 247, 247);
 }
 .bg-grey {
-  background-color: rgb(241, 230, 200);
+  background-color: rgb(255, 246, 195);
 }
 
 .bg-green {
@@ -73,6 +73,15 @@ main .container .info .col-6 img {
 .produkt:hover {
   transform: scale(1.02);
   transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+#produkter button {
+  background-color: white;
+  border: none;
+  font-family: "Abel", sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .row.info {
@@ -110,7 +119,7 @@ iframe {
 }
 
 footer {
-  background-color: rgb(241, 230, 200);
+  background-color: rgb(255, 246, 195);
 }
 
 /* footer img {
